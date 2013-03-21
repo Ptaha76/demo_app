@@ -4,9 +4,6 @@ gem 'rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-gem 'sqlite3'
-
 # Use unicorn as the web server
 # gem 'unicorn'
 
@@ -24,6 +21,11 @@ gem 'sqlite3'
 
 # Bundle gems for certain environments:
 # gem 'rspec', :group => :test
-# group :test do
-#   gem 'webrat'
-# end
+group :test,:development do
+	 gem 'webrat'
+	 gem "sqlite3"
+end 
+
+group :production do 
+	gem "pg"
+end
