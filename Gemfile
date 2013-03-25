@@ -1,7 +1,6 @@
 source 'http://rubygems.org'
 
 gem 'rails'
-gem 'sqlite3'
 gem 'jquery-rails'
 
 # Bundle edge Rails instead:
@@ -24,7 +23,7 @@ gem 'jquery-rails'
 # gem 'rspec', :group => :test
 group :test,:development do
 	 gem 'webrat'
-	 gem "sqlite3"
+	 gem 'sqlite3','1.3.7'
 end 
 
 group :production do 
